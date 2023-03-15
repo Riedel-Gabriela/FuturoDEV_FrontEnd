@@ -3,7 +3,7 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 
-<img src="/workspaces/FuturoDEV_FrontEnd/imagem1-readme.png" alt="imagem">
+<img src="imagem1-readme.png" alt="imagem">
 
 > Módulo 2 - FrontEnd do Curso FuturoDEV - Senai/Sesi
 
