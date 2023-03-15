@@ -14,10 +14,13 @@ const listaDePessoas = [
 
 /*Retorne os objetos que possuem a idade maior ou igual a 18 anos usando o .filter()*/
 
-
+//Com function nomeada
 function listaMaiorIdade(lista) {
   return lista.idade >= 18
 }
 
-let maiorIdade = console.log(listaDePessoas.filter(listaMaiorIdade))
+let maiorIdadeNomeada = console.log(listaDePessoas.filter(listaMaiorIdade))
 
+//Com arrow function
+let maiorIdade = listaDePessoas.filter((pessoa) => pessoa.idade >= 18)
+console.log(maiorIdade)

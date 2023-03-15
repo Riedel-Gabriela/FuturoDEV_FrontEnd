@@ -1,22 +1,3 @@
-//Conversor de moeda:
-
-function converteDolarEmReal(dolar, cotacaoDolar, tipoCliente) {
-    const valorDoDolarParaEsteCliente = calculaValorDolarPorTipoCliente(cotacaoDolar,tipoCliente)
-    console.log(dolar * cotacaoDolar)
-}
-
-//Quero cotar o dolar conforme o tipo de cliente: Lembre-se de distribuir responsabilidades!
-
-function calculaValorDolarPorTipoCliente (cotacaoDolar, tipoCliente) {
-    if(tipoCliente === 'premium') {
-        return cotacaoDolar -0,10
-    } else if(tipoCliente === 'antigo') {
-        return cotacaoDolar - 0,30
-    } else {
-        return cotacaoDolar
-    }
-}
-
 //Transforme os dados a seguir em funções:
 
 //Exemplo de função NOMEADA.

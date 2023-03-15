@@ -11,9 +11,8 @@ const verificaQuinzena = numeroDeDias => numeroDeDias <= 15 ? 'Primeira quinzena
 
 const verificaPositivo = lista => {
     let listaPositivos = []
-    let listaNegativos = []
     lista.forEach((numero) => {
-        numero >= 0 ? listaPositivos.push(numero) : listaNegativos.push(numero)
+        numero >= 0 ? listaPositivos.push(numero) : ''
     });
     return listaPositivos
 }
