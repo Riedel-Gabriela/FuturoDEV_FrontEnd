@@ -16,10 +16,8 @@ const listaDePessoas = [
 
 
 function listaMaiorIdade(lista) {
-  for(item of lista) {
-    return thins.idade
-  }
+  return lista.idade >= 18
 }
 
-listaMaiorIdade(listaDePessoas)
+let maiorIdade = console.log(listaDePessoas.filter(listaMaiorIdade))
 
