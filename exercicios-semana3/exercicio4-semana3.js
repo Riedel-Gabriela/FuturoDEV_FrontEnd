@@ -16,6 +16,9 @@ const listaDePessoas = [
 
 
 function listaMaiorIdade(lista) {
+  for(item of lista) {
+    return thins.idade
+  }
 }
 
 listaMaiorIdade(listaDePessoas)
