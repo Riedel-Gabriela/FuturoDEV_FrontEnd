@@ -12,15 +12,12 @@ const listaDePessoas = [
     { nome: "Cristiane", sobrenome: "Maria", idade: 41 },
 ];
 
-function listaMaiorIdade(lista) {
-    return lista.idade >= 18
-}
-  
-let maiorIdade = listaDePessoas.filter(listaMaiorIdade)
+let maioresDeIdade = listaDePessoas.filter((pessoa) => pessoa.idade >= 18)
 
-  //imprima o nome e sobrenome da primeira pessoa que possua idade maior que 30 anos.
+//imprima o nome e sobrenome da primeira pessoa que possua idade maior que 30 anos.
 
-let pessoaTrintaAnos = maiorIdade.find((pessoa) => pessoa.idade > 30)
+let pessoaTrintaAnos = maioresDeIdade.find((pessoa) => pessoa.idade > 30)
+
 console.log(`${pessoaTrintaAnos.nome} ${pessoaTrintaAnos.sobrenome}`)
 
 
