@@ -7,6 +7,8 @@
 
   <!-- LINK JAVASCRIPT E CSS VÃO AQUI -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript" defer></script>
+  
 
   <title>Manipulação de DOM</title>
 </head>
@@ -51,18 +53,18 @@
       <h4>Imprimir valor do input no console</h4>
       <div>
         <input type="text" id="input-imprimir">
-        <button id="imprimir">Imprimir</button>
+        <button id="imprimir" onclick="escrever()">Imprimir</button>
       </div>
 
       <h4>Adicionar e remover elemento ao clicar no botão</h4>
-      <button id="adicionar">Adicionar</button>
-      <button id="remover">Remover</button>
+      <button id="adicionar" onclick="adicionar()">Adicionar</button>
+      <button id="remover" onclick="remover()">Remover</button>
       <div id="adicionar-remover-elemento"></div>
 
       <h3>onmouseout e onmouseover</h3>
       
       <h4>Alterar cor ao passar e retirar o mouse</h4>
-      <div id="altera-cor"></div>
+      <div id="altera-cor" onmouseover="alterarCor('blue')" onmouseout="alterarCor('red')"></div>
 
       <h3>addEventListener</h3>
 
@@ -87,5 +89,6 @@
   </footer>
   
   <!-- TAMBÉM POSSO COLOCAR O JS AQUI -->
+  <!--<script src="script.js" type="text/javascript"></script>-->
 </body>
 </html>

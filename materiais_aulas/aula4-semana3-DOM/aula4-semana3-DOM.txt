@@ -1,0 +1,18 @@
+MANIPULAÇÃO DE DOM (Document Element Model)
+
+-Relembrando CSS
+    Tag HTML (h1)
+    ID (#meuid) <- identificação única
+    Classe (.nomedaclasse) <- pode ser reaproveitado
+    Atributo (elemento[atributo='valor']) <- como botões de input variando o tipo como 'password', 'radio', 'checkbox'.
+
+document.getElementById('id')
+document.getElementsByClassName('classe')[posição] <- me retorna um array de elementos. se quero uma específica, devo dizer a posição.
+
+-O que são eventos?
+    processo que possibilita alterar o valor e o status de um elemento HTML
+    exemplos mais comuns:
+        onclick
+        onchange
+        onmouseover
+        onmouseout
