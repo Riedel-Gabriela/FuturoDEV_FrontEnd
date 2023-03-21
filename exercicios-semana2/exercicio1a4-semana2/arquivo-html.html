@@ -1,0 +1,51 @@
+<html lang="pt-br">
+  <head>
+    <script src="/exercicios-semana2/exercicio1-semana2/exercicio1a4-semana2.js"  type="text/javascript"></script>
+  </head>
+  <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+  <div class="field-name"> <label>Nome</label>
+  </div>
+  <input type="string" name="name" text="Nome" placeholder="Digite seu nome" maxlength="200" id="name"  min="0" max="119">
+  <div class="field-city"> <label>Cidade</label>
+  </div>
+  <input type="string" name="name" text="Nome" placeholder="Digite sua cidade" maxlength="200" id="city"  min="0" max="119">
+  <div class="field-age"> <label>Idade</label>
+  </div>
+  <input type="number" name="age" text="Idade" placeholder="Ex: 35" maxlength="200" id="age"  min="0" max="119"> <span class="caption">anos</span>
+  <div class="field-height"> <label>Altura</label>
+  </div>
+  <input type="number" name="height" text="Altura" placeholder="Ex: 165" maxlength="200" id="height" min="0" max="225"> <span class="caption">cm</span>
+  <div class="field-weight"> <label>Peso</label>
+  </div>
+  <input type="number" name="weight" text="Peso" placeholder="Ex: 62,5" maxlength="200" id="weight"  min="0" max="300"> <span class="caption">kg</span>
+  <div>
+  <input type="button" id="submit" name="calculate" value="Calcular">
+  </div>
+  </div>
+</body>
+<script>
+    // Não se preocupe em fazer um formulário, esta página já está funcional 
+   const calculate = document.getElementById('submit')
+    // Crie a sua lógica a partir deste ponto
+    // Adicione seu array aqui
+  let lista = [];
+
+   calculate.addEventListener('click', () => {
+      // Esse document.getElementById, possui a informação dos inputs, capture ele utilizando uma variável
+      // Exemplo: let minhaVar = document.getElementById
+      // console.log(minhaVar) --> valor do document.getElement
+      let nome = document.getElementById('name').value
+      let cidade = document.getElementById('city').value
+      let idade = document.getElementById('age').value 
+      let altura = document.getElementById('height').value
+      let peso = document.getElementById('weight').value
+
+      // Adicione o objeto a ser preenchido aqui
+      
+    
+  alert("Olá, meu nome é " + [nome] + ", tenho " + [idade] + " anos, moro em " + [cidade] + ", meço " + [altura] + "cm, peso " + [peso] + "kg.")
+    IMC()
+    
+  })
+</script>
+</html>
