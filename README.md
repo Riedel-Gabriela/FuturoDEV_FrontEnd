@@ -29,18 +29,18 @@ Curso em andamento:
  
  ## :dizzy: SEMANA 2
  
- - Dia 1 - JavaScript: Variáveis, Tipos de dados
- - Dia 2 - Operadores (aritméticos, lógicos e relacionais), Array e Objetos
- - Dia 3 - Estrutura de repetição
- - Dia 4 - Estrutura condicional
+ - JavaScript: Variáveis, Tipos de dados
+ - Operadores (aritméticos, lógicos e relacionais), Array e Objetos
+ - Estrutura de repetição
+ - Estrutura condicional
 
 
 ## :dizzy: SEMANA 3 
 
- - Dia 1 - Funções
- - Dia 2 - ES6
- - Dia 3 - ES6 (continuação)
- - Dia 4 - Manipulação de DOM
+ - Funções
+ - ES6
+ - ES6 (continuação)
+ - Manipulação de DOM
 
 ## 🤝 Aluna
 
