@@ -20,14 +20,27 @@ Curso em andamento:
 - [ ] Semana 7
 - [ ] Semana 8
 
-## :dizzy: SEMANA 3 - FUNÇÕES E DOM
+## :dizzy: SEMANA 1
 
-Lembre-se das BOAS PRÁTICAS das Funções!
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Cada função deve fazer apenas UMA COISA (responsabilidade única).
-* Utilizar cameCase pra nomear suas funções.
-* Usar verbos para nomear.
-* Nome da função deve REFLETIR SEU PROPÓSITO.
+ - Arquitetura web (cliente-servidor) e HTML 5
+ - HTML 5 e CSS 3, 
+ - CSS 3 e Bootstrap 4, 
+ - Bootstrap 4, Introdução a JavaScript (Variáveis e dados, Operadores lógicos) e Organização: Kanban Board (O que é Kanban e utilização no Trello
+ 
+ ## :dizzy: SEMANA 2
+ 
+ - Dia 1 - JavaScript: Variáveis, Tipos de dados
+ - Dia 2 - Operadores (aritméticos, lógicos e relacionais), Array e Objetos
+ - Dia 3 - Estrutura de repetição
+ - Dia 4 - Estrutura condicional
+
+
+## :dizzy: SEMANA 3 
+
+ - Dia 1 - Funções
+ - Dia 2 - ES6
+ - Dia 3 - ES6 (continuação)
+ - Dia 4 - Manipulação de DOM
 
 ## 🤝 Aluna
 
