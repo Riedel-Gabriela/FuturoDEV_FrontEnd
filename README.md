@@ -20,7 +20,7 @@ Curso em andamento:
 - [ ] Semana 7
 - [ ] Semana 8
 
-## :dizzy: SEMANA 3 - FUNÇÕES
+## :dizzy: SEMANA 3 - FUNÇÕES E DOM
 
 Lembre-se das BOAS PRÁTICAS das Funções!
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
