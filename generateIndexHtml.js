@@ -20,31 +20,39 @@ function getHtmlFiles(dir, fileList = []) {
   return fileList;
 }
 
-function createHtmlPage(files) {
-  const listItems = files
+function updateHtmlPage(files) {
+  const listFilePath = "index.html";
+  const listContent = files
     .map((file) => {
       const relativePath = path.relative(directoryPath, file);
-      return `<li><a href="/${relativePath}">${relativePath}</a></li>`;
+      return `<li><a href="${relativePath}">${relativePath}</a></li>`;
     })
-    .join("\n    ");
-  const outputHtml = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Files List</title>
-</head>
-<body>
-  <ul>
-    ${listItems}
-  </ul>
-</body>
-</html>
-`;
+    .join("\n");
 
-  fs.writeFileSync("index.html", outputHtml, "utf-8");
+  if (!fs.existsSync(listFilePath)) {
+    console.error(`File "${listFilePath}" does not exist.`);
+    process.exit(1);
+  }
+
+  const htmlContent = fs.readFileSync(listFilePath, "utf-8");
+  const openingTag = '<ul id="list">';
+  const closingTag = "</ul>";
+
+  const startIndex = htmlContent.indexOf(openingTag);
+  const endIndex = htmlContent.indexOf(closingTag);
+
+  if (startIndex === -1 || endIndex === -1) {
+    console.error(`Element with id "list" not found.`);
+    process.exit(1);
+  }
+
+  const updatedHtmlContent =
+    htmlContent.slice(0, startIndex + openingTag.length) +
+    listContent +
+    htmlContent.slice(endIndex);
+
+  fs.writeFileSync(listFilePath, updatedHtmlContent, "utf-8");
 }
 
 const htmlFiles = getHtmlFiles(directoryPath);
-createHtmlPage(htmlFiles);
+updateHtmlPage(htmlFiles);

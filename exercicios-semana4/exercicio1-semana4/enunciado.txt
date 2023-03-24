@@ -1,0 +1,15 @@
+Ex 1 - Module/Operators
+Neste exercício será necessário a criação de um diretório com os seguintes arquivos
+-index.js
+-modules/
+-util.js
+1 - Em util.js é necessário a criação de três funções:
+
+    - conversorReais: converte um número em um valor em reais, ou seja se ela receber 4 dever á converter para R$ 4,00
+    - conversorCPF: crie um algoritmo que altere uma string para o formato de CPF
+    - ordenadorArray: função que realiza a organização dos números dentro de um array
+
+Todas as funções devem ser importadas utilizando o import dentro do index.js devem ser funcionais  e retornar o resultado esperado
+Todas as funções devem ser exportadas utilizando o export
+Lembre-se de instalar o pacote npm, e lá no package.json adicionar type: "module"
+ 
