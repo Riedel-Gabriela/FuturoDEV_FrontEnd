@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Pokedex</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
+
 <body>
-    <h1>Pokedex</h1>
-    <input type="text" id="pokemonName" placeholder="What pokemon are you looking for?"></input>
+    <main>
+        <div class="pokeCard">
+
+            <img src="#" alt="pokemon" class="pokemon__image">
+
+            <h1 class="pokemon__data">
+                <span class="pokemon__number"></span> -
+                <span class="pokemon__name"></span>
+            </h1>
+            <div class="pokemon__status">
+                <div>Hp: <span id="hp"></span></div>
+                <div>Attack: <span id="attack"></span></div>
+                <div>Defense: <span id="defense"></span></div>
+                <div>Special-Attack: <span id="special-attack"></span></div>
+                <div>Special-Defense: <span id="special-defense"></span></div>
+                <div>Speed: <span id="speed"></span></div>
+            </div>
+
+        </div>
+
+        <form class="form">
+            <input type="search" class="input__search" placeholder="Digite um Pokemon" required />
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">Prev</button>
+            <button class="button btn-next">Next</button>
+        </div>
+    </main>
+
 </body>
+
 </html>
