@@ -41,16 +41,11 @@ Curso em andamento:
  - ES6
  - ES6 (continuação)
  - Manipulação de DOM
+ 
+ 
+ ## :dizzy: SEMANA 4 
 
-## 🤝 Aluna
+ - Módulos (export e import) e Escopo
+ - Assincronicidade (promises, async e await) e Fetch API
+ - Interval e Timeout
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/112433872?v=4" width="100px;" alt="Foto da Gabriela Riedel no GitHub"/><br>
-        <sub>
-          <b>Gabriela Riedel</b>
-        </sub>
-      </a>
-    </td>
