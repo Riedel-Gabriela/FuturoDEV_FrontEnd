@@ -15,7 +15,7 @@ Curso em andamento:
 - [x] Semana 2
 - [x] Semana 3
 - [x] Semana 4
-- [ ] Semana 5
+- [x] Semana 5
 - [ ] Semana 6
 - [ ] Semana 7
 - [ ] Semana 8
