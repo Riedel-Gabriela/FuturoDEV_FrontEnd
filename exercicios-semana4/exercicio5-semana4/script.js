@@ -19,13 +19,13 @@ const listarPersonagens = async () => {
             if (results[i].status === 'Alive') {
                 let cardPersonagem = document.createElement('div')
                 cardPersonagem.innerHTML += `<img src = ${results[i].image} alt="imagem do produto">`;
-                cardPersonagem.innerHTML += `<p class="id">Id: ${results[i].id}</p>`;
-                cardPersonagem.innerHTML += `<p class="nome">Nome: ${results[i].name}</p>`;
-                cardPersonagem.innerHTML += `<p class="status">Status: ${results[i].status}</p>`;
-                cardPersonagem.innerHTML += `<p class="species">Espécie: ${results[i].species}</p>`;
-                cardPersonagem.innerHTML += `<p class="type">Tipo: ${results[i].type}</p>`;
-                cardPersonagem.innerHTML += `<p class="gender">Gênero: ${results[i].gender}</p>`;
-                cardPersonagem.innerHTML += `<p class="origin">Origem: ${results[i].origin.name}</p>`;
+                cardPersonagem.innerHTML += `<p class="id"><span class="itens-color">Id:</span> ${results[i].id}</p>`;
+                cardPersonagem.innerHTML += `<p class="nome"><span class="itens-color">Nome:</span> ${results[i].name}</p>`;
+                cardPersonagem.innerHTML += `<p class="status"><span class="itens-color">Status:</span> ${results[i].status}</p>`;
+                cardPersonagem.innerHTML += `<p class="species"><span class="itens-color">Espécie:</span> ${results[i].species}</p>`;
+                cardPersonagem.innerHTML += `<p class="type"><span class="itens-color">Tipo:</span> ${results[i].type}</p>`;
+                cardPersonagem.innerHTML += `<p class="gender"><span class="itens-color">Gênero:</span> ${results[i].gender}</p>`;
+                cardPersonagem.innerHTML += `<p class="origin"><span class="itens-color">Origem:</span> ${results[i].origin.name}</p>`;
                 mainContainer.appendChild(cardPersonagem);
             }
         }

@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
 .catalogo {
-    
+    display: flex;
+    justify-content: center;
+    align-content: space-between;  
+}
+
+h1 {
+    color: grey;
+}
+
+h2 {
+    color: purple;
+}
+
+* {
+    text-align: center;
+    font-family: 'Oxanium', cursive;
+}
+
+.itens-color {
+    color: purple;
+}
+
+img {
+    border-radius: 100%;
+}
+
+.personagem {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+button {
+    background-color: white;
+    border-radius: 6px;
+    border-color: grey;
+    padding: 15px;
+    font-size: 25px;
+    color: grey;
 }
