@@ -49,3 +49,13 @@ Curso em andamento:
  - Assincronicidade (promises, async e await) e Fetch API
  - Interval e Timeout
 
+
+## :dizzy: SEMANA 5 
+
+ - Introdução ao React
+ - Sintaxe JSX
+ - Renderização de Componentes
+ - Renderização londicional
+ - Renderização de listas
+ - Props
+ - PropTypes
