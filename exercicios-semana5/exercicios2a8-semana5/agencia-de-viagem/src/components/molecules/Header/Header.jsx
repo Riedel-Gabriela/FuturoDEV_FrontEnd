@@ -6,8 +6,8 @@ export default function Header() {
         <header>
             <img src={logo} alt='Imagem Logo' className='logo'></img>
             <div className='text-header'>
-                <h1 id='header-title'><strong>Criando Bagagem</strong></h1>
-                <h2>O mundo é o limite.</h2>
+                <h1 id='header-title'><strong>Pangéia Tour</strong></h1>
+                <h2>Suas fronteiras nunca foram tão próximas</h2>
             </div>
         </header>
     )
