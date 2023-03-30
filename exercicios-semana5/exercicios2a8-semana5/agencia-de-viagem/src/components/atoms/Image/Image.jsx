@@ -1,3 +1,5 @@
+import './Image.css'
+
 export default function Image({imagemUrl, textoAlternativo, formato}) {
     return (
         <img
