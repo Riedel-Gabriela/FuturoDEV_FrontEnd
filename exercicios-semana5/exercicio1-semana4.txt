@@ -1,0 +1,6 @@
+Ex 1 - Introdução ao React
+Com suas palavras descreve o que é React e quais as vantagens quando comparado ao VanillaJS.
+
+Em resumo, React é uma biblioteca de JavaScript popular que oferece várias vantagens em relação ao JavaScript puro. 
+Ele é fácil de usar, eficiente e altamente reutilizável, tornando-o uma excelente escolha para desenvolvedores que desejam 
+criar aplicativos da web modernos e de alto desempenho.
