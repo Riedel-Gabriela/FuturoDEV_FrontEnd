@@ -4,7 +4,7 @@ import { Footer, Header, Introduction, Card, CardIndisponivel } from './componen
 
 function App() {
   const destinos = [
-    { id: 1, pais: 'Itália', titulo: 'Visite Napoles', descricao: 'Aéreo + Hotel (7 diárias)', data: 'Março/2024', link: 'https://www.hurb.com/br/packages/napoles-passagem-aerea-hospedagem/1417860', url: 'https://images.travelclass.tur.br/uploads/2021/04/sicilia-no-inverno.jpg', status: 'disponivel' },
+    { id: 1, pais: 'Itália', titulo: 'Visite Nápoles', descricao: 'Aéreo + Hotel (7 diárias)', data: 'Março/2024', link: 'https://www.hurb.com/br/packages/napoles-passagem-aerea-hospedagem/1417860', url: 'https://images.travelclass.tur.br/uploads/2021/04/sicilia-no-inverno.jpg', status: 'disponivel' },
     { id: 2, pais: 'França', titulo: 'Conheça Paris', descricao: 'Aéreo + Hotel (5 diárias)', data: 'Agosto/2023', link: 'https://www.hurb.com/br/packages/paris-passagem-aerea-hospedagem/1405055', url: 'https://cdn.getyourguide.com/img/location/5ffeb392eb81e.jpeg/75.jpg', status: 'disponivel' },
     { id: 3, pais: 'México', titulo: 'Tudo incluso! Cancún', descricao: 'Resort All Inclusive (5 diárias)', data: 'Abril/2024', link: 'https://www.hurb.com/br/packages/cancun-passagem-aerea-hospedagem-all-inclusive/1393673', url: 'https://www.remessaonline.com.br/blog/wp-content/uploads/2022/05/viagem-para-cancun.jpg', status: 'disponivel' },
     { id: 4, pais: 'Alemanha', titulo: 'Berlim te espera!', descricao: 'Aéreo + Hotel (7 diárias)', data: 'Março/2025', link: 'https://www.hurb.com/br/packages/berlim-passagem-aerea-hospedagem/1417720', url: 'https://www.vounajanela.com/wp-content/uploads/2018/05/o-que-fazer-em-Berlim-1050x599.jpg', status: 'indisponivel' },
