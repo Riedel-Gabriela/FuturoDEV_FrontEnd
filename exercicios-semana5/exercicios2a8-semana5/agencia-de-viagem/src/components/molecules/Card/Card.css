@@ -13,6 +13,12 @@
     font-size: 40px;
 }
 
+a:link,  a:visited {
+    color: #8E9AAF;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .button-card {
     width: 400px;
     padding: 15px;

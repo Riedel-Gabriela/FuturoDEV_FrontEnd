@@ -8,8 +8,8 @@ export default function Card({id, pais, titulo, descricao, data, link, url}) {
             <h1>{titulo}</h1>
             <h3>{pais}</h3>
             <p>{descricao}</p>
-            <p>{data}</p>
-            <button href={link} className='button-card'>veja mais</button>
+            <p><strong>{data}</strong></p>
+            <button className='button-card'><a href={link} target='_blank'>veja mais</a></button>
         </div>
     )
 }
