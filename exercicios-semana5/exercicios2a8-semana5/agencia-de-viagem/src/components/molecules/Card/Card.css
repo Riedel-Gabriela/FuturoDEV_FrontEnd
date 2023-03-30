@@ -1,0 +1,27 @@
+.card {
+    width: 400px;
+    text-align: center;
+    background-color: #8E9AAF;
+    border-radius: 10px;
+    line-height: 20px;
+    margin: 30px;
+    height: 525px;
+}
+
+.card > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.button-card {
+    width: 400px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FEEAFA;
+    font-size: 25px;
+    color: #8E9AAF;
+    cursor: pointer;
+    border-color: #FEEAFA;
+    font-family: 'Roboto Mono', monospace;;
+}

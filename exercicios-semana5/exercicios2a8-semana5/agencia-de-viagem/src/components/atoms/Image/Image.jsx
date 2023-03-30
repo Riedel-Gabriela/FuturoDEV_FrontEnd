@@ -1,11 +1,11 @@
 import './Image.css'
 
-export default function Image({imagemUrl, textoAlternativo, formato}) {
+export default function Image({imagemUrl}) {
     return (
         <img
-        className={`imagem-${formato}`}
+        className='imagem-quadrada'
         src={imagemUrl}
-        alt={textoAlternativo || "Imagem"}
+        alt='Imagem'
         />
     )
 }

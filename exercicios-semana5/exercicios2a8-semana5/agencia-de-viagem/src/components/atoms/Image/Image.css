@@ -1,9 +1,5 @@
 .imagem-quadrada {
     width: 400px;
-    border-radius: 10px;
-}
-
-.imagem-redonda {
-    width: 200px;
-    border-radius: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
