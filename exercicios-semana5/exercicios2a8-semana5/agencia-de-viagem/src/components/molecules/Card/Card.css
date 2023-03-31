@@ -6,7 +6,11 @@
     border-radius: 10px;
     line-height: 20px;
     margin: 30px;
-    height: 530px;
+    min-height: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-direction: column;
 }
 
 .card > h1 {
@@ -31,4 +35,5 @@ a:link,  a:visited {
     cursor: pointer;
     border-color: #FEEAFA;
     font-family: 'Roboto Mono', monospace;;
+    
 }

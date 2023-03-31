@@ -1,5 +1,8 @@
-.imagem-quadrada {
+.imagem-card {
     width: 400px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }

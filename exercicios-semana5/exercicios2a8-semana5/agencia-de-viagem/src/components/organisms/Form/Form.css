@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.formulario-h1 {
+    text-align: center;
+    color: #8E9AAF;
+    background-color: #FEEAFA;
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.formulario {
+    line-height: 30px;
+    width: 500px;
+    color: white;
+    background-color: #8E9AAF;
+    padding: 40px 40px 20px 40px;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .button-form {
+    width: 100%;
+    background-color: #FEEAFA;
+    color: #8E9AAF;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-color: #8E9AAF;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-container {
+    display: flex;
+    height: 1000px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
