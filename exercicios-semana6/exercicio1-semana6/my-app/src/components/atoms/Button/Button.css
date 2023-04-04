@@ -1,0 +1,21 @@
+.purple {
+    background-color: #a248d3;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 100%;
+    width: 80px;
+}
+
+.grey {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 100%;
+    width: 80px;
+}
