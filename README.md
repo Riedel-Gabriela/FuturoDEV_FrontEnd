@@ -16,7 +16,7 @@ Curso em andamento:
 - [x] Semana 3
 - [x] Semana 4
 - [x] Semana 5
-- [ ] Semana 6
+- [x] Semana 6
 - [ ] Semana 7
 - [ ] Semana 8
 
@@ -59,3 +59,12 @@ Curso em andamento:
  - Renderização de listas
  - Props
  - PropTypes
+
+## :dizzy: SEMANA 6 
+
+ - Eventos e Hooks
+ - useState e Formulários
+ - Efeito Colateral, LifeCycle e useEffect
+ - useRef
+
+
