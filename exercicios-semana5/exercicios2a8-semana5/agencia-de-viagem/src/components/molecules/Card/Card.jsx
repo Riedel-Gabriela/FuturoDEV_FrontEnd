@@ -1,8 +1,8 @@
 import './Card.css'
-import { Image } from "../../atoms";
+import { Image, Button } from "../../atoms";
 
 
-export default function Card({pais, titulo, descricao, data, link, url, disponibilidade }) {
+export default function Card({pais, titulo, descricao, data, link, url, disponibilidade}) {
     return (
         <div className='card'>
             <Image imagemUrl={url} formato='card' />
@@ -13,7 +13,7 @@ export default function Card({pais, titulo, descricao, data, link, url, disponib
                     <>
                     <p>{descricao}</p>
                     <p><strong>{data}</strong></p>
-                    <button className='button-card'><a href={link} target='_blank'>veja mais</a></button>
+                    <Button tipo="button" classe="card"><a href={link} target='_blank'>veja mais</a></Button>
                     </>
                 ) : (
                     <p>Este pacote está indisponivel no momento.<br />Espere abrir novas datas ou escolha outro destino.</p> 

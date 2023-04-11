@@ -1,7 +1,8 @@
 import './App.css'
 import './components/molecules'
+import { Divider } from './components/atoms'
 import { Footer, Header, Introduction, Card } from './components/molecules'
-import { Form } from './components/organisms'
+import { FormPacotes, FormCadastro } from './components/organisms'
 
 function App() {
   const destinos = [
@@ -33,10 +34,13 @@ function App() {
                 />
             )
         })}
-
+      <Divider />
       </section>
       <section>
-        <Form />
+        <div className='forms-app'>
+        <FormPacotes />
+        <FormCadastro />
+        </div>
       </section>
       <Footer />
     </div>

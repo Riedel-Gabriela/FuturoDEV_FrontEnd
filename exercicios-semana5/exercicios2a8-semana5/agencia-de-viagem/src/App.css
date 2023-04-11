@@ -5,3 +5,11 @@
     align-items: center;
     padding: 40px;
 }
+
+.forms-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 40px;
+}

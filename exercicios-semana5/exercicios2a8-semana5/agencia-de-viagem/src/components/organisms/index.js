@@ -1,3 +1,4 @@
-import Form from './Form/Form'
+import FormPacotes from './Forms/FormPacotes'
+import FormCadastro from './Forms/FormCadastro'
 
-export { Form }
+export { FormPacotes, FormCadastro }
