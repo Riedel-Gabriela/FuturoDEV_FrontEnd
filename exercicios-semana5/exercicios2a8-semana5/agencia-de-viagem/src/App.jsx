@@ -36,11 +36,9 @@ function App() {
         })}
       <Divider />
       </section>
-      <section>
-        <div className='forms-app'>
+      <section className='forms-app'>
         <FormPacotes />
         <FormCadastro />
-        </div>
       </section>
       <Footer />
     </div>

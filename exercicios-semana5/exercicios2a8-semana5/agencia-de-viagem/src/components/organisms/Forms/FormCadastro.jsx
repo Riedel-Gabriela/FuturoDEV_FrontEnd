@@ -7,7 +7,7 @@ export default function FormCadastro() {
     return (
         <>
             <div className='form-container'>
-                <h1 className='formulario-h1'>Fique por dentro das novidades!</h1>
+                <h1 className='formulario-h1'>Fique por dentro das novidades</h1>
                 <div className='formulario'>
                     <form onSubmit={handleSubmit}>
                         <Input tipo="text" valor={form.nome} onchange={handleChange} nome="nome">Nome:</Input>
