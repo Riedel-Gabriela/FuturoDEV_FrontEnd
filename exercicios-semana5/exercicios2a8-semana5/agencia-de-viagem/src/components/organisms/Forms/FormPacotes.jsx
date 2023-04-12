@@ -1,33 +1,31 @@
 import './Forms.css'
-import { useForm } from '../../../hooks/hooks'
-import { Input, Button } from '../../atoms'
+import { useForm } from '../../../hooks/formHook'
+import { Button } from '../../atoms'
 
 export default function FormPacotes() {
-    const { handleChange, handleSubmit, form } = useForm({pais:"", titulo:"", descricao:"", data:"", link:"", url:"", disponibilidade:""})
+    const { handleChange, handleSubmit, form } = useForm({pais:"", titulo:"", descricao:"", data:"", link:"", url:"", disponibilidade: true})
     return (
         <>
             <div className='form-container'>
                 <h1 className='formulario-h1'>Adicione seu pacote aqui</h1>
                 <div className='formulario'>
                     <form onSubmit={handleSubmit}>
-                        <Input tipo="text" nome="pais" valor={form.pais} onchange={handleChange}>País:</Input>
-                        <br />
-                        <Input tipo="text" nome="titulo" valor={form.titulo} onchange={handleChange}>Título:</Input>
-                        <br />
-                        <Input tipo="text" nome="descricao" valor={form.descricao} onchange={handleChange}>Descrição:</Input>
-                        <br />
-                        <Input tipo="date" nome="data" valor={form.data} onchange={handleChange}>Data:</Input>
-                        <br />
-                        <Input tipo="text" nome="link" valor={form.link} onchange={handleChange}>Link do pacote:</Input>
-                        <br />
-                        <Input tipo="text" nome="url" valor={form.url} onchange={handleChange}>Url da imagem:</Input>
-                        <br />
+                        País:<br />
+                        <input type="text" name="pais" value={form.pais} onChange={handleChange} /><br />
+                        Título:<br />
+                        <input type="text" name="titulo" value={form.titulo} onChange={handleChange} /><br />
+                        Descrição:<br />
+                        <input type="text" name="descricao" value={form.descricao} onChange={handleChange} /><br />
+                        Data:<br />
+                        <input type="date" name="data" value={form.data} onChange={handleChange} /><br />
+                        Link do pacote:<br />
+                        <input type="text" name="link" value={form.link} onChange={handleChange} /><br />
+                        Url da imagem:<br />
+                        <input type="text" name="url" value={form.url} onChange={handleChange} /><br />
                         Disponibilidade: <br />
-                        <Input tipo="radio" nome="disponibilidade" valor={form.disponibilidade = true} onchange={handleChange}>Disponível</Input>
-                        <br />
-                        <Input tipo="radio" nome="disponibilidade" valor={form.disponibilidade = false} onchange={handleChange}>Indisponível</Input>
-                        <br />
-                        <Button tipo="submit" classe="form">enviar</Button>
+                        <input type="radio" name="disponibilidade" value={form.disponibilidade} onChange={handleChange} />Disponível<br />
+                        <input type="radio" name="disponibilidade" value={form.disponibilidade} onChange={handleChange} />Indisponível<br />
+                        <Button type="submit" classe="form">enviar</Button>
                     </form>
                 </div>
             </div>
