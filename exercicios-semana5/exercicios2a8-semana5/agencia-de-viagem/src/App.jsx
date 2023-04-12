@@ -6,7 +6,7 @@ import { FormPacotes, FormCadastro } from './components/organisms'
 import { useFetch } from './hooks/fetchHook'
 
 function App() {
-  const destinos = useFetch("http://localhost:3003/destinos")[0]
+  const destinos = useFetch("http://localhost:3003/destinos")
   console.log(destinos)
   return (
     <div>
