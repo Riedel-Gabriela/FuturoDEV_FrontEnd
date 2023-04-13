@@ -11,7 +11,7 @@ import AppWithRoutes from './AppWithRoutes'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <NoteProvider> */}
-      <App />
+      <AppWithContext />
     {/* </NoteProvider> */}
   </React.StrictMode>,
 )

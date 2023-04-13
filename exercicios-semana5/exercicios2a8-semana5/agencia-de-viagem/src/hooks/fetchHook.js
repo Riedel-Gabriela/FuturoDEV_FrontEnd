@@ -14,14 +14,14 @@ export const useFetch = (url) => {
 
   useEffect(() => getData(), []);
 
-  const handleDelete = (item) => {
-    fetch(`${url}/${item.id}`, {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(item)
-    })
-      .then(() => getData());
-  };
+  // const handleDelete = (item) => {
+  //   fetch(`${url}/${item.id}`, {
+  //     method: "DELETE",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(item)
+  //   })
+  //     .then(() => getData());
+  // };
 
-  return [itens, handleDelete];
+  return [{itens}];
 }
