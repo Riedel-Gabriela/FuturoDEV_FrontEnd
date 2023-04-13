@@ -1,4 +1,5 @@
 import { useNoteContext } from '../../contexts/NoteContext'
+import NoteItem from './NoteItem'
 
 const NoteList = () => {
     const { notes } = useNoteContext()

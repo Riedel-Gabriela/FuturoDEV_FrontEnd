@@ -5,6 +5,34 @@ O hook customizado deve permitir que as anotações sejam adicionadas, atualizad
 */
 import { useState } from 'react';
 
-const useNotes = () => {};
+const useNotes = () => {
+    const [notes, setNotes] = useState([]);
+    const [selectedNote, setSelectedNote] = useState(null);
+  
+    const addNote = (note) => {
+      setNotes([...notes, note]);
+    };
+  
+    const handleNoteSelect = (note) => {
+      setSelectedNote(note);
+    };
+  
+    const deleteNote = (id) => {
+      setNotes(notes.filter((note) => note.id !== id));
+    };
+  
+    const updateNote = (id, updatedNote) => {
+      setNotes(notes.map((note) => (note.id === id ? updatedNote : note)));
+    };
+    return {
+        addNote,
+        selectedNote,
+        updateNote,
+        setSelectedNote,
+        notes,
+        deleteNote,
+        handleNoteSelect
+    }
+};
 
 export default useNotes;
