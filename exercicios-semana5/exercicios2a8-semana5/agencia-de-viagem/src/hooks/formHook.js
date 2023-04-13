@@ -8,11 +8,26 @@ export function useForm(initialState) {
         setForm({ ...form, [name]: value });
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event, url) => {
+        const { name, value } = event.target
         event.preventDefault();
+        fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(item)
+          })
+            .then(() => setForm({ ...form, [name]: value }))
         console.log(form);
-        setForm(initialState)
     };
 
-    return { handleChange, handleSubmit, form }
+    const handleDelete = (item) => {
+        fetch(`${url}/${item.id}`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(item)
+        })
+          .then(() => getData());
+      };
+
+    return { handleChange, handleSubmit, handleDelete, form }
 }
