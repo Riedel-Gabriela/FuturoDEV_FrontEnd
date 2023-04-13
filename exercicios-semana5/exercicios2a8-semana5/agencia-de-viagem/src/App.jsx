@@ -6,15 +6,13 @@ import { FormPacotes, FormCadastro } from './components/organisms'
 import { useFetch } from './hooks/fetchHook'
 
 function App() {
-  const destinos = useFetch("http://localhost:3003/destinos")
-  console.log(destinos)
+  const [destinos] = useFetch("http://localhost:3003/destinos")
   return (
     <div>
       <Header />
       <Introduction />
       <section className='card-catalog'>
-        {destinos
-        .filter(item => item.disponibilidade == true)
+        {destinos?.filter(item => item.disponibilidade == true)
         .map(item => {
             return (
                 <Card

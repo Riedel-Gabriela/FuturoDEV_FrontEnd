@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-// Hook customizado podem ser simples ou complexos, o importante é que sejam adequados para seu projeto
 export const useFetch = (url) => {
-  const [itens, setItens] = useState(null);
+  //Sempre inicializa com uma lista, então o initial state é lista vazia
+  const [itens, setItens] = useState([]);
 
   const getData = () => {
     fetch(url)
@@ -14,14 +14,15 @@ export const useFetch = (url) => {
 
   useEffect(() => getData(), []);
 
-  // const handleDelete = (item) => {
-  //   fetch(`${url}/${item.id}`, {
-  //     method: "DELETE",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(item)
-  //   })
-  //     .then(() => getData());
-  // };
-
-  return [{itens}];
+  const handleDelete = (item) => {
+    fetch(`${url}/${item.id}`, {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(item)
+    })
+      .then(() => getData());
+  };
+//usando o array, tem que lembrar que na primeira posição esta um e na segunda outro
+//posso exportar um objeto e utilizar o nome do item.
+  return [itens, handleDelete];
 }
