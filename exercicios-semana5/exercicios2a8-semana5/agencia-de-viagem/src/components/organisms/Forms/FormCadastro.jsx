@@ -3,7 +3,7 @@ import { useForm } from '../../../hooks/formHook'
 import { Button } from '../../atoms'
 
 export default function FormCadastro() {
-    const { handleChange, handleSubmit, form } = useForm({nome:"", email:"", telefone:""})
+    const { handleChange, handleSubmit, form, message } = useForm({nome:"", email:"", telefone:""})
     return (
         <>
             <div className='form-container'>
@@ -19,6 +19,7 @@ export default function FormCadastro() {
                         <Button tipo="submit" classe="form">enviar</Button>
                     </form>
                 </div>
+                <p>{message}</p>
             </div>
         </>
     )
