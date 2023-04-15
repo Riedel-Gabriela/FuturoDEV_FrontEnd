@@ -1,4 +1,76 @@
+import { useParams, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNoteContext } from "../../contexts/NoteContext";
+
+
 const NoteForm = () => {
+    const navigate = useNavigate();
+    const { id } = useParams();
+    const { addNote, notes, updateNote } = useNoteContext()
+    const selectedNote = notes.find(note => note.id === Number(id))
+    const [formValues, setFormValues] = useState({
+        title: "",
+        content: "",
+    });
+
+    useEffect(() => {
+        if (selectedNote) {
+            setFormValues({
+                title: selectedNote.title,
+                content: selectedNote.content,
+            });
+        }
+    }, [selectedNote]);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (selectedNote) {
+            updateNote(selectedNote.id, {
+                ...selectedNote,
+                title: formValues.title,
+                content: formValues.content,
+            });
+        } else {
+            addNote({
+                id: Date.now(),
+                title: formValues.title,
+                content: formValues.content,
+            });
+        }
+
+        setFormValues({
+            title: "",
+            content: "",
+        });
+
+        navigate('/')
+    };
+
+    return (
+        <div className="add-note">
+            <h2>Adicionar Nova Nota</h2>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Título"
+                    value={formValues.title}
+                    onChange={(e) =>
+                        setFormValues({ ...formValues, title: e.target.value })
+                    }
+                />
+                <textarea
+                    placeholder="Conteúdo"
+                    value={formValues.content}
+                    onChange={(e) =>
+                        setFormValues({ ...formValues, content: e.target.value })
+                    }
+                />
+                <button type="submit">
+                    {selectedNote ? "Atualizar Nota" : "Adicionar Nota"}
+                </button>
+            </form>
+        </div>
+    );
 };
 
 export default NoteForm;

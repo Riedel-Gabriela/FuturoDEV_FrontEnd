@@ -1,9 +1,16 @@
 import './Forms.css'
 import { useForm } from '../../../hooks/formHook'
+import { useFetch } from '../../../hooks/fetchHook'
 import { Button } from '../../atoms'
 
 export default function FormCadastro() {
-    const { handleChange, handleSubmit, form, message } = useForm({nome:"", email:"", telefone:""})
+    const { handleChange, form, resetForm } = useForm({nome:"", email:"", telefone:""})
+    const { createData } = useFetch('http://localhost:3003/cadastro')
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        createData(form)
+        resetForm();
+    }
     return (
         <>
             <div className='form-container'>
@@ -19,7 +26,6 @@ export default function FormCadastro() {
                         <Button tipo="submit" classe="form">enviar</Button>
                     </form>
                 </div>
-                <p>{message}</p>
             </div>
         </>
     )

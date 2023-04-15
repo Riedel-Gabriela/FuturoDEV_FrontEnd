@@ -24,8 +24,8 @@ export default function FormPacotes() {
                         Url da imagem:<br />
                         <input type="text" name="url" value={form.url} onChange={handleChange} /><br />
                         Disponibilidade: <br />
-                        <input type="radio" name="disponibilidade" value={form.disponibilidade} onChange={handleChange} />Disponível<br />
-                        <input type="radio" name="disponibilidade" value={form.disponibilidade} onChange={handleChange} />Indisponível<br />
+                        <input type="radio" name="disponibilidade" value={form.disponibilidade} />Disponível<br />
+                        <input type="radio" name="disponibilidade" value={form.disponibilidade} />Indisponível<br />
                         <Button type="submit" classe="form">enviar</Button>
                     </form>
                 </div>
