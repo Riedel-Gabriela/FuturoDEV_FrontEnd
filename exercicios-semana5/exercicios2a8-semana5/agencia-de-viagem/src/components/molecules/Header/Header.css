@@ -9,6 +9,10 @@ header {
   #header-title {
     font-size: 60px;
     font-family: 'Roboto Mono', monospace;
+    margin-top: 75px;
+    margin-left: 260px;
+    text-align: left;
+    line-height: 30px;
   }
   
   .logo {
@@ -18,9 +22,23 @@ header {
   }
   
   .text-header {
-    margin-top: 95px;
+    margin-top: 40px;
     margin-left: 260px;
     text-align: left;
     line-height: 30px;
   }
   
+  nav > button {
+    float: right;
+    color: #8E9AAF;
+    border-radius: 8px;
+    border-color: #FEEAFA;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #FEEAFA;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin: -0.5em 0.5em;
+  }

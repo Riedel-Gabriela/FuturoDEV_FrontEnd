@@ -1,0 +1,7 @@
+.forms-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
