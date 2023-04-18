@@ -21,12 +21,13 @@ export const useFetch = (url) => {
     .then(() => getData())
   };
 
-  const deleteData = (body) => {
-    fetch(`${url}/${body.id}`, {
+  const deleteData = (id) => {
+    console.log(id)
+    fetch(`${url}/${id}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     })
-      .then(() => getData());
+    .then(() => getData());
   };
 
   const updateData = (body) => {
@@ -42,5 +43,5 @@ export const useFetch = (url) => {
   
 //usando o array, tem que lembrar que na primeira posição esta um e na segunda outro
 //posso exportar um objeto e utilizar o nome do item.
-  return { itens, createData, deleteData, updateData };
+  return { itens, createData, deleteData, updateData, getData };
 }

@@ -1,7 +1,6 @@
 import './Forms.css'
 import { useForm } from '../../../hooks/formHook'
 import { useFetch } from '../../../hooks/fetchHook'
-import { Button } from '../../atoms'
 
 export default function FormCadastro() {
     const { handleChange, form, resetForm } = useForm({nome:"", email:"", telefone:""})
@@ -23,7 +22,7 @@ export default function FormCadastro() {
                         <input type="email" name="email" value={form.email} onChange={handleChange} /><br />
                         Telefone:<br />
                         <input type="text" name="telefone" value={form.telefone} onChange={handleChange} /><br />
-                        <Button tipo="submit" classe="form">enviar</Button>
+                        <button type="submit" className="button-form">enviar</button>
                     </form>
                 </div>
             </div>

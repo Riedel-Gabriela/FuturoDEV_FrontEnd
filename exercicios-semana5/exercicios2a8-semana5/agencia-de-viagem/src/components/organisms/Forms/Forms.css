@@ -39,4 +39,14 @@ input[type=text], input[type=date], input[type=email] {
     align-content: center;
   }
 
-  
+  .button-form {
+    width: 100%;
+    background-color: #FEEAFA;
+    color: #8E9AAF;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-color: #8E9AAF;
+    border-radius: 4px;
+    cursor: pointer;
+  }

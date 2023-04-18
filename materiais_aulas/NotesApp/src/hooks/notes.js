@@ -16,7 +16,7 @@ const useNotes = () => {
           setNotes(resultado)
         }
     }, [])
-    //esse hooke substitui os 'localStorage' utilizados nas funções abaixo.
+    //esse hook substitui os 'localStorage' utilizados nas funções abaixo.
     useEffect(() => {
       localStorage.setItem('noteList', JSON.stringify(notes))
     }, [notes])

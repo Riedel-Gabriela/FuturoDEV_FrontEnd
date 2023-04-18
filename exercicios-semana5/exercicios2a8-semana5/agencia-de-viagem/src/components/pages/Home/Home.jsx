@@ -13,6 +13,7 @@ export default function Home() {
                         return (
                             <Card
                                 disponibilidade={item.disponibilidade}
+                                id={item.id}
                                 key={item.id}
                                 pais={item.pais}
                                 titulo={item.titulo}

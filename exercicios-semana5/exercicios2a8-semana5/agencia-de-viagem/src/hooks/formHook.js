@@ -10,5 +10,9 @@ export function useForm(initialState) {
     setForm({ ...form, [name]: value });
   };
 
-  return { handleChange, form, resetForm }
+  const handleRadioButton = (event) => {
+    form.disponibilidade = event.target.value==='true'?true:false;
+}
+
+  return { handleChange, form, resetForm, handleRadioButton }
 }
