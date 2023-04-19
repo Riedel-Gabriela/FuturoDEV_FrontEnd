@@ -17,8 +17,8 @@ Curso em andamento:
 - [x] Semana 4
 - [x] Semana 5
 - [x] Semana 6
-- [ ] Semana 7
-- [ ] Semana 8
+- [x] Semana 7
+- [x] Semana 8
 
 ## :dizzy: SEMANA 1
 
@@ -67,4 +67,13 @@ Curso em andamento:
  - Efeito Colateral, LifeCycle e useEffect
  - useRef
 
+## :dizzy: SEMANA 7 
 
+ - Hooks Customizado
+ - Componentização e Prop Drilling
+ - useContext, useParam
+ - React Router DOM + Context API
+ 
+ ## :dizzy: SEMANA 8 
+
+ - Projeto Final LabFoods
